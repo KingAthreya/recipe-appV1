@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: hsl(210, 36%, 96%);
+  color:  hsl(209, 61%, 16%);
+ 
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    text-decoration: none;
+    padding: 1rem;
+}
+
+li{
+    margin: 0.34rem;
+}
+
+ul li{
+    color: hsl(210, 22%, 49%);
+    font-family: 'Poppins', sans-serif;
+  
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+  font-family: "Lobster", sans-serif;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+
+.title{
+    text-align: center;
+    padding: 3rem 0;
+    background: #9eeae7;
+}
+
+.underline{
+    width: 5rem;
+  height: 0.25rem;
+  background: #c59d5f;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+   
+ }
+
+.card{
+    display: flex;
+    flex: 1;
+  
+    padding: 2rem;
+}
+
+.content{
+    padding: 0rem 1rem;
+} 
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.5px solid hsl(210, 22%, 49%);
+}
+
+.header h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+}
+
+.calories{
+    
+        color: #c59d5f;
+     
+}
+
+form{
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    position: relative;
+    top: -1.8rem;
+}
+
+form input{
+    width: 52%;
+    height: 2.9rem;
+    border-radius: .3rem;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 15px rgb(0 0 0/15%);
+    margin-right: 0.4rem;
+    font-size: 20px;
+
+}
+input:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #c59d5f;
+}
+input[type="text"]::placeholder {  
+    padding-left: 7px;               
+    color: hsl(210, 22%, 49%);
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    
+} 
+
+form button{
+    width: 5%;
+    height: 2.9rem;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 0 10px 15px rgb(0 0 0/15%);
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif; 
+    color: hsl(210, 22%, 49%);   
+    
+}
+
+form button:hover{
+    background-color: #9eeae7;
+    transition: all 0.18s ease-in;
+}
+
+
+.photo {
+    object-fit: cover;
+    height: 200px;
+    width: 300px;
+    border: 0.25rem solid #c59d5f;
+    border-radius: 0.25rem;
+    display: block;
+  }
+
+  #footer {
+    padding: 5% 15%;
+    text-align: center;
+    background-color: #9eeae7;
+
+}
+.sicon{
+    margin: 20px 10px;
+
+}
+.sicon:hover{
+    color: #c59d5f;
+}
+
+
+
+
+
+  @media (max-width: 480px) {
+    .App {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+     
+    }
+    .card{
+        flex-direction: column;
+        padding: 2.3rem 0;
+        
+    }
+    .content{
+        margin-top: 1.6rem;
+       
+        
+    }
+    h1{
+        font-size: 3rem;
+    }
+    form input{
+       width: 63%;
+       height: 2.1rem;
+    }
+    
+    form button{
+        width: 20%;
+        height: 2.1rem;
+    }
+    
+ .photo {
+       
+      height: 175px;
+      align-self: center;
+
+    }
+  }
